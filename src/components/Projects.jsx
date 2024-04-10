@@ -3,6 +3,14 @@ import Project from "./Cards/Project";
 
 export const projects = [
   {
+    title: "Medium Clone",
+    stack: "ReactJS, TailwindCSS",
+    detail:
+      "A clone of the Medium homepage made using ReactJS and TailwindCSS. Implemented interactive components including Radix UI’s Accordion for collapsible sections with smooth transitions, Lenis for smooth scrolling, and Framer Motion for dynamic typing animations.",
+    date: "Apr. 2024",
+    link: "",
+  },
+  {
     title: "MCU Timeline",
     stack: "JavaScript, HTML, CSS",
     detail:
