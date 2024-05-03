@@ -3,6 +3,13 @@ import Project from "./Cards/Project";
 
 export const projects = [
   {
+    title: "Satellite Image Classification",
+    stack: "Python, TensorFlow, Keras, PIL, NumPy, Matplotlib, Tkinter",
+    date: "Apr. 2024",
+    detail: "Developed a CNN-based deep learning model to classify satellite images into categories like Cloudy, Desert, and Water. Implemented data preprocessing, augmentation, and trained the model, evaluating its performance using accuracy and loss metrics.",
+    link: "",
+  },
+  {
     title: "Medium Clone",
     stack: "ReactJS, TailwindCSS",
     detail:
@@ -16,6 +23,16 @@ export const projects = [
     detail:
       "A responsive website to view upcoming Marvel Cinematic Universe films and series. Implemented functions to detect the user’s browser, operating system, and device type, and dynamically adjust the user experience based on these factors.",
     date: "Apr. 2024",
+    link: "",
+  },
+  {
+    title: "Microsoft Stock Price Prediction",
+    stack: "Python, TensorFlow, Keras, Pandas, Matplotlib, Scikit-learn, NumPy",
+    date: "Mar. 2024",
+    detail: `
+      Utilized Long Short-Term Memory (LSTM) neural networks to predict the closing prices of Microsoft stock.
+      Preprocessed historical stock data, built and trained the LSTM model, and evaluated its accuracy in predicting future stock prices.
+    `,
     link: "",
   },
   {
