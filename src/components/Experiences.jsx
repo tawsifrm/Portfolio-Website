@@ -17,7 +17,7 @@ export const experiences = [
     stack: "C, FreeRTOS",
     detail:
       "Developed real-time software and drivers for TI RM46 microcontroller in C and FreeRTOS. Implemented responsive OS interrupt handling for temperature sensors like the LM75BD. Designed I2C-based sensor functions and UART data transmission for reliable system operation.",
-    date: "Jul. 2023 - Present",
+    date: "Jul. 2023 - May 2024",
     link: "",
   },
 ];
