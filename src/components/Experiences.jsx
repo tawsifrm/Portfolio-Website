@@ -5,9 +5,18 @@ export const experiences = [
   {
     title: "Web Development Intern",
     company: "Mhapy",
-    stack: "React, TailwindCSS",
+    stack: "ReactJS, TailwindCSS, NestJS, ExpressJS",
     detail:
-      "Developed core functionalities for a patient-therapist matching website using React and TailwindCSS. Integrated Mhapy’s API to match users to therapists based on their form choices. Designed a visually appealing and responsive landing page for improved user experience. Planned and prototyped user interface designs using Figma for implementation guidance.",
+      "Developed core functionalities for a patient-therapist matching website using ReactJS and TailwindCSS. Connected Mhapy’s API using NestJS and ExpressJS on the backend, leveraging user form inputs to provide personalized therapist recommendations, enhancing user satisfaction and matching accuracy. Utilized React media queries to craft responsive and visually captivating pages, ensuring optimal display across various devices and screen sizes, thereby improving accessibility and user experience. Used Figma to plan and prototype user interface designs, providing clear implementation guidance to ensure a consistent and intuitive user interface, aligning with project goals.",
+    date: "Jan. 2024 - Present",
+    link: "",
+  },
+  {
+    title: "Web Development Team",
+    company: "Electrium Mobility",
+    stack: "ReactJS, TypeScript, Node.js, ExpressJS, JavaScript, Discord.js",
+    detail:
+      "Enhanced the website using ReactJS and TypeScript, focusing on responsiveness and accessibility. Simplified the application process for potential team members by developing a backend system using Node.js and Express that connects to a document for organizing applicants, ensuring a smooth experience and data security. Improved the Discord bot’s functionality by creating a frontend for bot configurations and implementing a calendar event creator using JavaScript and Discord.js to enhance team communication and streamline event scheduling.",
     date: "Jan. 2024 - Present",
     link: "",
   },
