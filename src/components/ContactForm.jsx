@@ -1,6 +1,8 @@
+// src/components/ContactForm.js
 import React, { useState } from "react";
 import Input from "./Input";
 import Button from "./Btn";
+import emailjs from 'emailjs-com';
 
 export default function ContactForm() {
   const [firstName, setFirstName] = useState("");
@@ -9,9 +11,32 @@ export default function ContactForm() {
   const [subject, setSubject] = useState("");
   const [body, setBody] = useState("");
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const templateParams = {
+      firstName,
+      lastName,
+      email,
+      subject,
+      body
+    };
+
+    emailjs.send('service_yepvjbk', 'template_3mxu5al', templateParams, 'ZIdcjgmbQs-5VIHSD')
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        alert('Your message has been sent!');
+      })
+      .catch((error) => {
+        console.error('FAILED...', error);
+        alert('There was an error sending your message. Please try again.');
+        console.log('Error details:', error);
+      });
+  };
+
   return (
     <div className="relative flex flex-col lg:max-w-[50%] grow overflow-hidden">
-      <form className="space-y-3 m-8 md:m-12">
+      <form className="space-y-3 m-8 md:m-12" onSubmit={handleSubmit}>
         <div className="flex flex-col md:flex-row md:space-x-4 justify-between">
           <Input
             label="First-Name"
@@ -58,7 +83,7 @@ export default function ContactForm() {
             required
           />
         </div>
-        <Button text="Submit" type="Submit" className="w-full" bg="bg-fuchsia-500" />
+        <Button text="Submit" type="submit" className="w-full" bg="bg-fuchsia-500" />
       </form>
     </div>
   );
