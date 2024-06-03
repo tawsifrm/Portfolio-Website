@@ -1,4 +1,3 @@
-// src/components/ContactForm.js
 import React, { useState } from "react";
 import Input from "./Input";
 import Button from "./Btn";
@@ -10,9 +9,20 @@ export default function ContactForm() {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [body, setBody] = useState("");
+  const [emailError, setEmailError] = useState("");
+
+  const validateEmail = (email) => {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!validateEmail(email)) {
+      setEmailError("Please enter a valid email address.");
+      return;
+    }
 
     const templateParams = {
       firstName,
@@ -56,11 +66,15 @@ export default function ContactForm() {
         <Input
           label="Email"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => {
+            setEmail(e.target.value);
+            setEmailError("");
+          }}
           type="email"
           placeholder="johndoe@example.com"
           required
         />
+        {emailError && <p className="text-red-500 text-sm">{emailError}</p>}
         <Input
           label="Subject"
           value={subject}
