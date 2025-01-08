@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Pages/Home";
 import LoadingSite from "./components/Pages/LoadingSite";
-import ResumePDF from "/Resume-public/Resume-1-04-09.pdf";
+import ResumePDF from "/Resume-public/Tawsif_Resume.pdf";
 
 function App() {
   const [ loading, setLoading ] = useState( true );

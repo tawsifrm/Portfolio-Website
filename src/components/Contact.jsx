@@ -5,7 +5,7 @@ import Button from "./Btn";
 import ContactForm from "./ContactForm";
 import { scrollAnimation } from "./Pages/Home";
 import Socials from "./Socials";
-import ResumePDF from "/Resume-public/Resume-1-04-09.pdf";
+import ResumePDF from "/Resume-public/Tawsif_Resume.pdf";
 
 export default function Contact() {
   return (

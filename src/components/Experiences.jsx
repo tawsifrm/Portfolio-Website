@@ -3,7 +3,7 @@ import Experience from "./Cards/Experience";
 
 export const experiences = [
   {
-    title: "Web Development Intern",
+    title: "Full-stack Developer Intern",
     company: "Mhapy",
     stack: "ReactJS, TailwindCSS, NestJS, ExpressJS",
     detail:

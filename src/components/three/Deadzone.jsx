@@ -28,7 +28,7 @@ export default function Deadzone() {
         animate="in"
         className="font-semibold text-center w-full px-2 text-base md:text-lg"
       >
-        An Electrical Engineering Student at the University of Waterloo.
+        A Computer Engineering Student at the University of Waterloo.
       </motion.h2>
       <motion.div
         variants={enterDeadzone}

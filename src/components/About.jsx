@@ -18,19 +18,16 @@ export default function About() {
           <h1 className="font-bold text-3xl text-slate-100">About Me.</h1>
           <div className="text-lg space-y-6 font-light">
             <p>
-              I'm a passionate self-taught developer and started studying at
-              the University of Waterloo in Fall 2023. I'm enrolled in Electrical Engineering
-              and a part of Waterloo's esteemed co-op program.
+              Hey there! 👋 I’m Tawsif Mayaz, a Computer Engineering student at the University of Waterloo, passionate about leveraging technology to solve real-world challenges and create impactful software solutions.
             </p>
             <p>
-              Fun fact: My childhood nostalgia runs deep, manifesting in my love for collecting Funko Pops and Legos that are suited to my interests like anime, superheroes, and sports. You can say I'm still a kid at heart!
+              With hands-on experience in full-stack development, firmware programming, and web design, I enjoy working on projects that bridge the gap between innovative technology and practical application. My journey has led me to develop intuitive user interfaces, optimize backend systems, and even build dynamic real-time software for microcontrollers.
             </p>
-            <p className="font-light">
-              <span className="!text-white mb-2 font-semibold text-transparent">
-                Interests:
-              </span>{" "}
-              Machine Learning and AI, Web Development, Firmware, Hackathons,
-              Badminton, Basketball, Biking
+            <p>
+              I’m skilled in languages like JavaScript, Python, C++, and Java, and I’ve worked with frameworks such as ReactJS, ThreeJS, and TensorFlow. Whether it’s creating animations with Framer Motion, prototyping in Figma, or optimizing databases with PostgreSQL, I’m always excited to learn new tools and push the boundaries of what’s possible.
+            </p>
+            <p className="text-xl font-semibold text-slate-100">
+              For me, engineering is all about creativity, curiosity, and collaboration—and I can’t wait to see what’s next on this journey!
             </p>
           </div>
         </div>
