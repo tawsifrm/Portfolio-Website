@@ -74,13 +74,13 @@ export default function Experiences() {
           >
             <span className="font-medium">My Tech Stack: </span>
             <span className="sm:gradient-text text-indigo-500 italic font-medium">
-              Java, TypeScript, Python, HTML, CSS, JavaScript,
+              Java, TypeScript, Python, HTML, CSS, JavaScript, Java, C, C++, SQL,
               ReactJS, NodeJS, ExpressJS, VueJS, AngularJS
             </span>
             <br />
             <span className="font-medium">Tools I've Used: </span>
             <span className="sm:gradient-text text-indigo-500 italic font-medium">
-              Git and GitHub, Visual Studio, Figma, Android Studio, Jira, MS Office Suite, Azure
+              Git and GitHub, Visual Studio, PostgreSQL, MySql, Figma, Android Studio, Jira, MS Office Suite, Azure
             </span>
           </motion.p>
           <TabNavigation />

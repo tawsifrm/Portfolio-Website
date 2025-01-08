@@ -3,6 +3,14 @@ import Project from "./Cards/Project";
 
 export const projects = [
   {
+    title: "Dynamic World Generation - WEC",
+    stack: "Python, Turtle, BFS",
+    date: "Jul. 2024",
+    detail: 
+      "Developed a dynamic world generation algorithm for tile-based maps in Python, winning 1st place at Waterloo Engineering Competition (WEC) 2024. Implemented features such as random tile-based map generation, pathfinding using Breadth-First Search (BFS), and connectivity checks to ensure all rooms are accessible.",
+    link: "https://github.com/tawsifrm/WEC-2024", // Add your project link here
+  },
+  {
     title: "Satellite Image Classification",
     stack: "Python, TensorFlow, Keras, PIL, NumPy, Matplotlib, Tkinter",
     date: "Apr. 2024",

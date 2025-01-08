@@ -7,7 +7,7 @@ export const experiences = [
     company: "Mhapy",
     stack: "ReactJS, TailwindCSS, NestJS, ExpressJS",
     detail:
-      "Developed core functionalities for a patient-therapist matching website using ReactJS and TailwindCSS. Connected Mhapy’s API using NestJS and ExpressJS on the backend, leveraging user form inputs to provide personalized therapist recommendations, enhancing user satisfaction and matching accuracy. Utilized React media queries to craft responsive and visually captivating pages, ensuring optimal display across various devices and screen sizes, thereby improving accessibility and user experience. Used Figma to plan and prototype user interface designs, providing clear implementation guidance to ensure a consistent and intuitive user interface, aligning with project goals.",
+      "Developed core functionalities for a patient-therapist matching website using ReactJS and TailwindCSS, resulting in a 30% increase in user engagement. Connected Mhapy’s API using NestJS and ExpressJS on the backend and leveraged forms to provide personalized therapist recommendations, enhancing user satisfaction and improving matching accuracy by 25%. Used PostgreSQL to manage and query relational databases for storing user and therapist data, ensuring efficient data retrieval and manipulation for over 10,000 user records. Used Figma to plan and prototype user interface designs, providing clear implementation guidance to ensure a consistent and intuitive user interface, improving accessibility and user experience. Collaborated with a team of 5 developers and 2 designers in an Agile environment to integrate 10+ new features, ensuring seamless functionality and improving overall site performance.",
     date: "Jan. 2024 - Present",
     link: "",
   },
