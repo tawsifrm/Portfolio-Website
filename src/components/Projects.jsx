@@ -1,95 +1,158 @@
-import React from "react";
-import Project from "./Cards/Project";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 export const projects = [
   {
+    title: "TerraCustos",
+    stack: ["React", "Mapbox", "Supabase", "GraphQL"],
+    date: "Jan 2025",
+    detail: "A real-time disaster reporting and visualization application with interactive map features. Integrated Supabase for authentication and real-time data synchronization, and utilized an external GraphQL API for live disaster event data.",
+    link: "https://github.com/tawsifrm/OEC2025",
+    github: "https://github.com/tawsifrm/OEC2025"
+  },
+  {
+    title: "Handwriting Recognition API",
+    stack: ["C++", "OpenCV", "Boost", "RESTful API"],
+    date: "Oct 2024",
+    detail: "A RESTful API for handwritten text recognition. Implemented token-based authentication, rate limiting with token bucket algorithm, and endpoints for image upload and text recognition with support for JSON and plain text formats.",
+    link: "https://github.com/tawsifrm/Handwriting-Recognition-API",
+    github: "https://github.com/tawsifrm/Handwriting-Recognition-API"
+  },
+  {
+    title: "PTCG Dex",
+    stack: ["React Native", "Pokemon TCG API"],
+    date: "Sep 2024",
+    detail: "A React Native mobile app that displays Pokemon trading cards using the Pokemon TCG API. Ensured seamless cross-platform functionality with React Native CLI for both Android and iOS platforms.",
+    link: "https://github.com/tawsifrm/PTCG-Dex",
+    github: "https://github.com/tawsifrm/PTCG-Dex"
+  },
+  {
     title: "Dynamic World Generation - WEC",
-    stack: "Python, Turtle, BFS",
-    date: "Jul. 2024",
-    detail: 
-      "Developed a dynamic world generation algorithm for tile-based maps in Python, winning 1st place at Waterloo Engineering Competition (WEC) 2024. Implemented features such as random tile-based map generation, pathfinding using Breadth-First Search (BFS), and connectivity checks to ensure all rooms are accessible.",
-    link: "https://github.com/tawsifrm/WEC-2024", // Add your project link here
-  },
-  {
-    title: "Satellite Image Classification",
-    stack: "Python, TensorFlow, Keras, PIL, NumPy, Matplotlib, Tkinter",
-    date: "Apr. 2024",
-    detail: "Developed a CNN-based deep learning model to classify satellite images into categories like Cloudy, Desert, and Water. Implemented data preprocessing, augmentation, and trained the model, evaluating its performance using accuracy and loss metrics.",
-    link: "https://github.com/tawsifrm/Satellite-Image-Classification", // Add your project link here
-  },
-  {
-    title: "Medium Clone",
-    stack: "ReactJS, TailwindCSS",
-    detail:
-      "A clone of the Medium homepage made using ReactJS and TailwindCSS. Implemented interactive components including Radix UI’s Accordion for collapsible sections with smooth transitions, Lenis for smooth scrolling, and Framer Motion for dynamic typing animations.",
-    date: "Apr. 2024",
-    link: "https://react-medium-clone-tawsif.netlify.app/", // Add your project link here
-  },
-  {
-    title: "MCU Timeline",
-    stack: "JavaScript, HTML, CSS",
-    detail:
-      "A responsive website to view upcoming Marvel Cinematic Universe films and series. Implemented functions to detect the user’s browser, operating system, and device type, and dynamically adjust the user experience based on these factors.",
-    date: "Apr. 2024",
-    link: "https://mcutimeline.tiiny.site/", // Add your project link here
-  },
-  {
-    title: "Microsoft Stock Price Prediction",
-    stack: "Python, TensorFlow, Keras, Pandas, Matplotlib, Scikit-learn, NumPy",
-    date: "Mar. 2024",
-    detail: `
-      Utilized Long Short-Term Memory (LSTM) neural networks to predict the closing prices of Microsoft stock.
-      Preprocessed historical stock data, built and trained the LSTM model, and evaluated its accuracy in predicting future stock prices.
-    `,
-    link: "https://github.com/tawsifrm/msft-stock-prediction-lstm", // Add your project link here
-  },
-  {
-    title: "Javascript Pacman",
-    stack: "JavaScript, HTML, CSS",
-    detail:
-      "Developed a classic arcade-style Pac-Man game using pure JavaScript. Implemented character movement, collision detection, scoring, and game state management using DOM manipulation, event handling, timeouts, arrays, and array methods for game logic.",
-    date: "Feb. 2024",
-    link: "https://jspacman.tiiny.site/", // Add your project link here
-  },
-  {
-    title: "Dog Breed Identifier",
-    stack: "Python, TensorFlow, Keras, OpenCV, Scikit-learn, NumPy, Pandas, Matplotlib",
-    detail:
-      "Created a program to classify dog images into breeds using a pre-trained ResNet50V2 model. Trained and fine-tuned the model on a labeled dataset with data augmentation and customized layers.",
-    date: "Jan. 2024",
-    link: "https://github.com/tawsifrm/Dog-Breed-Identifier", // Add your project link here
+    stack: ["Python", "Turtle", "BFS"],
+    date: "Jul 2024",
+    detail: "Secured 1st place out of 124 participants at the Waterloo Engineering Competition by developing a Python-based world generation algorithm that utilized Breadth-First Search (BFS) and Dijkstra's algorithm for efficient pathfinding. Implemented Turtle graphics for an interactive visualization of the pathfinding process.",
+    link: "https://github.com/tawsifrm/WEC-2024",
+    github: "https://github.com/tawsifrm/WEC-2024"
   },
   {
     title: "Bricks Be Gone",
-    stack: "Android, Java, Android Studio",
-    detail:
-      "Developed a classic brick breaker game for Android using Java and Android Studio. Implemented dynamic gameplay, collision detection, scoring system, health indicator, game over handling, and restart and exit functionality.",
-    date: "Jan. 2024",
-    link: "https://github.com/tawsifrm/Bricks-Be-Gone", // Add your project link here
-  },
-  {
-    title: "SuperTyper - Typing Game",
-    stack: "JavaScript, HTML, CSS",
-    detail:
-      "Developed a fun and challenging typing game where you can enhance your typing skills. Used HTML, CSS, and JavaScript to create an engaging and responsive user interface, real-time feedback, and dynamic game logic.",
-    date: "Dec. 2023",
-    link: "https://github.com/tawsifrm/SuperTyper", // Add your project link here
-  },
+    stack: ["Java", "XML", "Android Studio"],
+    date: "Jan 2024",
+    detail: "A classic brick breaker game developed for Android using Java and Android Studio. Features dynamic gameplay, collision detection, scoring system, and smooth animations.",
+    link: "https://github.com/tawsifrm/Bricks-Be-Gone",
+    github: "https://github.com/tawsifrm/Bricks-Be-Gone"
+  }
 ];
+
+const ProjectCard = ({ project, index }) => {
+  const [isHovered, setIsHovered] = useState(false);
+  
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      className="relative group"
+    >
+      <div 
+        className="relative overflow-hidden rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 p-6 transition-all duration-300 hover:border-fuchsia-500/30 hover:shadow-lg hover:shadow-fuchsia-500/10 h-full flex flex-col"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        {/* Gradient highlight on hover */}
+        <div className={`absolute inset-0 bg-gradient-to-br from-fuchsia-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'}`}></div>
+        
+        <div className="relative z-10 flex flex-col h-full">
+          {/* Header with title and links */}
+          <div className="flex justify-between items-start mb-4">
+            <h3 className="text-xl font-bold text-fuchsia-400 group-hover:text-fuchsia-300 transition-colors">
+              {project.title}
+            </h3>
+            <div className="flex space-x-3">
+              {project.github && (
+                <a 
+                  href={project.github} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors"
+                  aria-label="GitHub Repository"
+                >
+                  <FiGithub className="w-5 h-5" />
+                </a>
+              )}
+              <a 
+                href={project.link} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-fuchsia-400 transition-colors"
+                aria-label="View Project"
+              >
+                <FiExternalLink className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+          
+          {/* Date */}
+          <span className="inline-block px-3 py-1 text-xs font-medium text-fuchsia-400 bg-fuchsia-500/10 rounded-full mb-4 w-fit">
+            {project.date}
+          </span>
+          
+          {/* Description */}
+          <p className="text-gray-300 mb-4 line-clamp-3 flex-grow">
+            {project.detail}
+          </p>
+          
+          {/* Tech stack */}
+          <div className="flex flex-wrap gap-2 mt-4">
+            {Array.isArray(project.stack) ? (
+              project.stack.slice(0, 4).map((tech, i) => (
+                <span 
+                  key={i} 
+                  className="px-2.5 py-1 text-xs font-mono text-fuchsia-300 bg-white/5 rounded-full border border-white/5"
+                >
+                  {tech}
+                </span>
+              ))
+            ) : (
+              <span className="px-2.5 py-1 text-xs font-mono text-fuchsia-300 bg-white/5 rounded-full border border-white/5">
+                {project.stack}
+              </span>
+            )}
+            {Array.isArray(project.stack) && project.stack.length > 4 && (
+              <span className="px-2.5 py-1 text-xs font-mono text-gray-400 bg-white/5 rounded-full">
+                +{project.stack.length - 4} more
+              </span>
+            )}
+          </div>
+        </div>
+        
+        {/* Animated border bottom */}
+        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-fuchsia-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+    </motion.div>
+  );
+};
 
 export default function Projects() {
   return (
-    <>
-      {projects.map(({ title, stack, detail, date, link }) => (
-        <Project
-          key={title}
-          title={title}
-          stack={stack}
-          detail={detail}
-          date={date}
-          link={link}
-        />
-      ))}
-    </>
+    <section id="projects" className="relative py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <AnimatePresence>
+          {projects.map((project, index) => (
+            <ProjectCard 
+              key={project.title}
+              project={project}
+              index={index % 3} // Stagger animation in groups of 3
+            />
+          ))}
+        </AnimatePresence>
+      </div>
+      
+      {/* Decorative elements */}
+      <div className="absolute -top-20 -right-20 w-64 h-64 bg-fuchsia-500/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+      <div className="absolute -bottom-20 left-20 w-72 h-72 bg-blue-500/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+    </section>
   );
 }
