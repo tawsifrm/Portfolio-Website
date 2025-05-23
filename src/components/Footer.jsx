@@ -18,10 +18,10 @@ export default function Footer() {
           About
         </a>
         <a
-          href="#experiences"
+          href="#experience"
           className="hover:bg-white hover:text-gray-500 basic-focus-animation transition-all rounded-md px-2 py-1"
         >
-          Experiences
+          Experience
         </a>
         <a
           href="#contact"

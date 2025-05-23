@@ -26,13 +26,13 @@ function App() {
       ) : (
         <Navbar
           mainText="Tawsif Mayaz."
-          menuItems={ {
+          menuItems={{
             Home: "#",
             About: "#about",
-            Experience: "#experiences",
+            Experience: "#experience",
             Contact: "#contact",
             Resume: ResumePDF,
-          } }
+          }}
           special={ [ "Resume" ] }
         />
       ) }

@@ -58,18 +58,60 @@ export default function MainHero() {
 
       <div className="flex flex-col justify-center md:flex-row md:justify-start w-full px-6 text-gray-500">
         <div className="px-20 lg:px-64 py-14 md:text-right text-center">
-          <motion.h1
-            variants={textUp}
-            initial="down"
-            animate="up"
-            className="text-6xl md:text-7xl pb-2 overflow-hidden"
-          >
-            Hi, I'm
-            <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 to-fuchsia-500">
-              {" "}
-              Tawsif Mayaz.
-            </span>
-          </motion.h1>
+          <div className="relative">
+            <motion.h1
+              variants={textUp}
+              initial="down"
+              animate="up"
+              className="text-6xl md:text-7xl lg:text-8xl pb-2 overflow-hidden"
+            >
+              <span className="relative z-10">
+                Hi, I'm
+                <span className="relative inline-block">
+                  <motion.span 
+                    className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-500 to-fuchsia-500"
+                    animate={{
+                      backgroundPosition: ['0% 50%', '100% 50%', '0% 50%']
+                    }}
+                    transition={{
+                      duration: 8,
+                      repeat: Infinity,
+                      ease: 'linear'
+                    }}
+                    style={{
+                      backgroundSize: '200% auto'
+                    }}
+                  >
+                    {' '}Tawsif Mayaz
+                  </motion.span>
+                  <motion.span 
+                    className="absolute inset-0 z-0 text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500/30 via-purple-500/30 to-indigo-400/30"
+                    style={{
+                      filter: 'blur(12px)',
+                      transform: 'translateY(8px) scale(1.05)'
+                    }}
+                    animate={{
+                      backgroundPosition: ['100% 50%', '0% 50%', '100% 50%']
+                    }}
+                    transition={{
+                      duration: 8,
+                      repeat: Infinity,
+                      ease: 'linear'
+                    }}
+                  >
+                    {' '}Tawsif Mayaz
+                  </motion.span>
+                </span>
+              </span>
+            </motion.h1>
+            <motion.div 
+              className="absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-indigo-400 via-purple-500 to-fuchsia-500 rounded-full"
+              initial={{ width: 0 }}
+              animate={{ width: '100%' }}
+              transition={{ duration: 1.5, delay: 0.5 }}
+              style={{ filter: 'drop-shadow(0 0 8px rgba(192, 132, 252, 0.6))' }}
+            />
+          </div>
           <motion.h2
             initial={{
               y: 50,

@@ -83,14 +83,24 @@
   }
 }
 
-#about,
-#experiences,
-#contact {
-  scroll-margin: 90px;
+/* Add scroll margin to all section elements */
+section[id] {
+  scroll-margin-top: 100px; /* Adjust this value based on your header height */
+  scroll-snap-margin-top: 100px; /* For older browsers */
 }
 
+/* Specific adjustments for each section if needed */
+#about,
+#experience,
+#contact {
+  scroll-margin-top: 100px; /* Match this with your header height */
+  scroll-snap-margin-top: 100px;
+}
+
+/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* This prevents content from being hidden behind fixed header */
 }
 
 body {
