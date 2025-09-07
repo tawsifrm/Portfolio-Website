@@ -4,6 +4,14 @@ import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 export const projects = [
   {
+    title: "BetterKaraoke",
+    stack: ["React Native", "Expo", "Expo AV"],
+    date: "Aug 2025",
+    detail: "A mobile karaoke app with React Native and Expo, supporting real-time multiplayer, lyric synchronization, scoring, and matchmaking. Implemented audio capture and mixing using Expo AV for improved synchronization precision and reduced latency.",
+    link: "https://github.com/tawsifrm/BetterKaraoke",
+    github: "https://github.com/tawsifrm/BetterKaraoke"
+  },
+  {
     title: "TerraCustos",
     stack: ["React", "Mapbox", "Supabase", "GraphQL"],
     date: "Jan 2025",

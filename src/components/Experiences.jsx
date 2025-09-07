@@ -4,32 +4,47 @@ import { FiExternalLink } from "react-icons/fi";
 
 export const experiences = [
   {
+    title: "Software Developer Intern",
+    company: "Cineplex Digital Media",
+    stack: ["Unity", "C#", "Azure Kinect SDK", "React", "Flask", "Python", "D3.js", "Three.js", "SQLite"],
+    detail:
+      "Engineered Unity C# systems with Azure Kinect sensors for precise customer interaction tracking and built interactive 3D configuration platforms for retail spaces.",
+    date: "May 2025 - Aug 2025",
+    achievements: [
+      "Enabled precise customer interaction tracking with Unity C# system and Azure Kinect sensors",
+      "Cut product placement setup time by 60% through interactive 3D configuration platform",
+      "Reduced layout inconsistencies by 25+ manual actions with ray-casting and grid-based placement",
+      "Built full-stack analytics pipeline with React frontend and Flask REST API for 10,000+ events per session",
+      "Automated data parsing with Python and generated 2D/3D interaction maps using D3.js and Three.js"
+    ]
+  },
+  {
+    title: "Full-stack Developer",
+    company: "Electrium Mobility",
+    stack: ["Next.js", "Supabase", "TypeScript", "TailwindCSS"],
+    detail:
+      "Developed and deployed a scalable e-commerce platform for electric vehicle rentals with secure authentication and responsive design.",
+    date: "Sep 2024 - Apr 2025",
+    achievements: [
+      "Developed and deployed scalable Next.js and Supabase e-commerce platform for electric vehicle rentals",
+      "Architected secure authentication and authorization flows with Supabase Auth",
+      "Designed responsive interface with Tailwind CSS, improving accessibility compliance",
+      "Streamlined collaboration with Git/GitHub workflows, enabling faster iteration cycles"
+    ]
+  },
+  {
     title: "Full-stack Development Intern",
     company: "Mhapy",
     stack: ["React", "TailwindCSS", "NestJS", "Express", "PostgreSQL", "Figma"],
     detail:
-      "Developed core functionalities for a patient-therapist matching website using ReactJS and TailwindCSS, resulting in a 30% increase in user engagement.",
+      "Integrated core functionalities for a patient-therapist matching website using React and Tailwind, driving a 30% increase in user engagement.",
     date: "Jan 2024 - Aug 2024",
     achievements: [
-      "Developed core features with ReactJS and TailwindCSS, boosting user engagement by 30%",
-      "Built backend with NestJS and ExpressJS, improving matching accuracy by 25%",
-      "Managed PostgreSQL database for 1000+ user records",
-      "Designed UI/UX with Figma, improving accessibility and user experience",
-      "Collaborated with 5 developers and 2 designers in Agile environment"
-    ]
-  },
-  {
-    title: "Web Development Team Member",
-    company: "Electrium Mobility",
-    stack: ["Next.js", "Supabase", "TypeScript", "TailwindCSS"],
-    detail:
-      "Developed an e-commerce platform for renting electric vehicles with real-time features and user authentication.",
-    date: "Jan 2024 - Present",
-    achievements: [
-      "Built e-commerce platform using Next.js and Supabase",
-      "Implemented user authentication and authorization with Supabase",
-      "Designed responsive UI with Tailwind CSS for cross-device compatibility",
-      "Optimized performance with server-side rendering and caching strategies"
+      "Integrated core features with React and Tailwind, boosting user engagement by 30%",
+      "Boosted therapist recommendation accuracy by 25% with personalized matching flows using NestJS and Express",
+      "Designed, maintained, and optimized PostgreSQL databases for 1,000+ active users",
+      "Created interactive prototypes in Figma, accelerating iteration cycles on accessibility improvements",
+      "Collaborated in Agile team of 7, delivering 10+ features through regular sprints"
     ]
   },
   {

@@ -99,7 +99,7 @@ export default function Experiences() {
                 <h3 className="text-lg font-semibold text-gray-800">Languages</h3>
               </div>
               <div className="flex flex-wrap gap-2">
-                {['JavaScript', 'TypeScript', 'HTML/CSS', 'Python', 'Java', 'Objective-C', 'C++', 'SQL'].map((item, index) => (
+                {['JavaScript', 'TypeScript', 'Python', 'Java', 'C++', 'C#', 'SQL', 'Objective-C', 'HTML/CSS'].map((item, index) => (
                   <span 
                     key={`lang-${index}`}
                     className="px-3 py-1.5 bg-indigo-50 text-indigo-700 text-sm rounded-full border border-indigo-100 hover:bg-indigo-100 transition-colors"
@@ -117,7 +117,7 @@ export default function Experiences() {
                 <h3 className="text-lg font-semibold text-gray-800">Frameworks</h3>
               </div>
               <div className="flex flex-wrap gap-2">
-                {['ReactJS', 'React Native', 'Node.js', 'ExpressJS', 'VueJS', 'AngularJS', 'Next.js', 'OpenCV', 'TailwindCSS', 'NestJS'].map((item, index) => (
+                {['React', 'React Native', 'Next.js', 'Node', 'Express', 'Vue', 'Angular', 'Flask', 'OpenCV', 'Tailwind', 'D3.js', 'Three.js'].map((item, index) => (
                   <span 
                     key={`framework-${index}`}
                     className="px-3 py-1.5 bg-purple-50 text-purple-700 text-sm rounded-full border border-purple-100 hover:bg-purple-100 transition-colors"
@@ -135,7 +135,7 @@ export default function Experiences() {
                 <h3 className="text-lg font-semibold text-gray-800">Tools</h3>
               </div>
               <div className="flex flex-wrap gap-2">
-                {['Git', 'GitHub', 'PostgreSQL', 'MySQL', 'Supabase', 'Android Studio', 'Figma', 'Jira', 'MS Office Suite', 'Azure', 'Mapbox'].map((item, index) => (
+                {['Unity', 'Azure Kinect SDK', 'PostgreSQL', 'MySQL', 'SQLite', 'Supabase', 'GraphQL', 'Git', 'Jira'].map((item, index) => (
                   <span 
                     key={`tool-${index}`}
                     className="px-3 py-1.5 bg-amber-50 text-amber-700 text-sm rounded-full border border-amber-100 hover:bg-amber-100 transition-colors"
